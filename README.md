@@ -1,5 +1,13 @@
 # img2cnc
  Convert an image to CNC GCODE  
+## Usage
+```
+pip install opencv-python  
+pip install numpy  
+# all sizes in inches
+python img2cnc.py --width 10 --height 12 --image Lenna.png --headsize 0.1 --headsperpixel 2 --colors 5
+```
+
 ## Output Images
 ![image](https://user-images.githubusercontent.com/8158655/184055867-c03187c0-f32a-4726-80dd-754b9ac71717.png)  
   
