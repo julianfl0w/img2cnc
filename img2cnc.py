@@ -1,4 +1,5 @@
 # pip install opencv-python
+# pip install numpy
 import cv2
 import sys
 import numpy as np
@@ -110,17 +111,17 @@ if __name__ == "__main__":
     infilename = "Lenna.png"
     for i, arg in enumerate(sys.argv):
         if arg == "-w" or arg == "--width":
-            outwidth_inches = int(arg[i+1])
+            outwidth_inches = int(sys.argv[i+1])
         if arg == "-h" or arg == "--height":
-            outheight_inches = int(arg[i+1])
+            outheight_inches = int(sys.argv[i+1])
         if arg == "-i" or arg == "--image":
-            infilename = arg[i+1]
+            infilename = sys.argv[i+1]
         if arg == "-s" or arg == "--headsize":
-            headsize_inches = int(arg[i+1])
+            headsize_inches = float(sys.argv[i+1])
         if arg == "-p" or arg == "--headsperpixel":
-            heads_per_pixel = int(arg[i+1])
+            heads_per_pixel = int(sys.argv[i+1])
         if arg == "-c" or arg == "--colors":
-            color_count = int(arg[i+1])
+            color_count = int(sys.argv[i+1])
             
     process(infilename = infilename, 
             outwidth_inches = outwidth_inches, 
