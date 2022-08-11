@@ -6,6 +6,7 @@ pip install opencv-python
 pip install numpy  
 # all sizes in inches
 python img2cnc.py --width 10 --height 12 --image Lenna.png --headsize 0.1 --headsperpixel 2 --colors 5
+hit any key when images are open to quit
 ```
 
 ## Output Images
